@@ -30,10 +30,23 @@ nav {
 
 }
 
-@media only screen and (max-width: 320px) {
+.hamburger.hamburger--emphatic.js-hamburger {
+    display: none; 
+}
+
+
+@media only screen and (max-width: 750px) {
     .list {
         display: none;
     }
+
+    .hamburger.hamburger--emphatic.js-hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
 }
 
 .icon {
@@ -41,9 +54,15 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    color: #438f92;
 }
 
-.name {
+.icon:hover {
+    cursor: pointer;
+    color: #57bbbf;
+}
+
+.logo {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -205,6 +224,7 @@ video {
     .about {
         display: flex;
         flex-direction: column;
+        padding: 0 20px;
     }
 
     .img {
@@ -222,11 +242,193 @@ video {
 .help {
     background-image: url(https://static.wixstatic.com/media/84770f_0cf5b6c1550a4b8c92f92f1064cc68de~mv2.jpg/v1/fill/w_1037,h_1057,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_0cf5b6c1550a4b8c92f92f1064cc68de~mv2.jpg);
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-block: 80px;
+
+}
+
+.card {
+    height: 500px;
+    width: 350px;
+    border: 7px solid black;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.book_it {
+    height: 40px;
+    width: 120px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.values {
+    display: flex;
+    gap: 50px;
+}
+
+.card_yazi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.more_services {
+    height: 40px;
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-top: 100px;
+    cursor: pointer;
+}
 
 
+.help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.help_yazi {
+    margin-bottom: 70px;
+}
+
+.more_services:hover {
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+
+}
+
+@media only screen and (max-width: 1020px) {
+    .help {
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        background-color: white;
+    }
+
+    .values {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+footer {
+    background-color: #57bbbf;
+
+}
+
+.contact_input {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 350px;
+    padding-block: 60px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    gap: 10px;
+}
+
+.ad {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.last {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-size: 30px;
+    background-color: #57bbbf;
+    border: 2px solid black;
+}
+
+textarea {
+    border: 2px solid black;
+    background-color: #57bbbf;
+}
+
+.submit {
+    height: 40px;
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+
+}
+
+@media only screen and (max-width: 1020px) {
+    .contact_input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+html {
+    scroll-padding-top: 150px;
+    scroll-behavior: smooth;
 }
